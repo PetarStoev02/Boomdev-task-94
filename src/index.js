@@ -7,17 +7,19 @@ window.addEventListener("DOMContentLoaded", () => {
   // Used to access the app instance by the automated tests
   
   app.setEmojis(["🐒", "🦍", "🦧"]);
-  let emojis=app.emojis
-  let banana=app.banana
-  app.addBananas(emojis.map(element => element + banana));
-
-  let ee=  emojis.map(element => element + banana)
   
- let paragraph= document.createElement("paragraph")
- paragraph.textContent = ee
+  app.addBananas(app.emojis);
+  console.log(app);
+
+  app.setEmojis()
+
+//   let ee=  emojis.map(element => element + banana)
+  
+//  let paragraph= document.createElement("paragraph")
+//  paragraph.textContent = ee
  
- document.querySelector("#emojis").appendChild(paragraph)
- console.log()
+//  document.querySelector("#emojis").appendChild(paragraph)
+//  console.log()
   window.__JS_APP = app;
 
 });
