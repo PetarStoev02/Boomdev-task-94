@@ -8,18 +8,8 @@ window.addEventListener("DOMContentLoaded", () => {
   
   app.setEmojis(["🐒", "🦍", "🦧"]);
   
-  app.addBananas(app.emojis);
-  console.log(app);
-
-  app.setEmojis()
-
-//   let ee=  emojis.map(element => element + banana)
+  app.addBananas();
   
-//  let paragraph= document.createElement("paragraph")
-//  paragraph.textContent = ee
- 
-//  document.querySelector("#emojis").appendChild(paragraph)
-//  console.log()
   window.__JS_APP = app;
 
 });

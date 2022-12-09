@@ -15,7 +15,16 @@ export default class Application extends EventEmitter {
   }
   setEmojis(emojis) {
     this.emojis = emojis;
+
+    let paragraph= document.createElement("paragraph")
+    paragraph.textContent = this.emojis
+    document.querySelector("#emojis").appendChild(paragraph)
   }
 
-  addBananas() {}
+  addBananas(banana) {
+
+    this.banana = banana
+    this.emojis.map(element => element + banana)
+    }
 }
+
